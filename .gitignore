@@ -1,0 +1,13 @@
+# Dependency directories
+**/node_modules/
+**/target/
+**/.idea/
+**/.vscode/
+**/*.iml
+**/*.zip
+**/uploads/resumes/*
+!**/uploads/resumes/.gitkeep
+**/.DS_Store
+**/dist/
+**/build/
+.env
