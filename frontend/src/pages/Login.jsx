@@ -15,7 +15,12 @@ export default function Login() {
       localStorage.setItem('token', res.data.token);
       navigate('/dashboard');
     } catch (err) {
-      setError('Login failed. Please check your credentials.');
+      console.error('Login API Error:', err);
+      if (err.response && err.response.data && err.response.data.message) {
+        setError(err.response.data.message);
+      } else {
+        setError('Login failed. Please check your credentials.');
+      }
     }
   };
 

@@ -16,7 +16,12 @@ export default function Register() {
       localStorage.setItem('token', res.data.token);
       navigate('/dashboard');
     } catch (err) {
-      setError('Registration failed. Try a different email.');
+      console.error('Registration API Error:', err);
+      if (err.response && err.response.data && err.response.data.message) {
+        setError(err.response.data.message);
+      } else {
+        setError('Registration failed. Try a different email.');
+      }
     }
   };
 
