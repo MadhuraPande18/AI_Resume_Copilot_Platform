@@ -1,6 +1,6 @@
 # 🎙️ AI Interview Copilot & ATS Optimizer Platform
 
-link:https://ai-resume-copilot-platform-1cg7.vercel.app/dashboard
+
 
 An extraordinary, high-end production fullstack application designed to help candidates prepare for technical and behavioral assessments. The platform integrates a dynamic glassmorphism dashboard, real-time client-side keyword grading, browser-native speech-to-text transcriptions, and a floating AI Career Advisor chatbot.
 
